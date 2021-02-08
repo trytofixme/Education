@@ -26,9 +26,4 @@ def MergeSort(mass, p, r):
         q = (p + r) // 2
         MergeSort(mass, p, q)
         MergeSort(mass, q + 1, r)
-        Merge(mass, p, q, r)
-        
-mass = [int(ind) for ind in input().split()]
-n = len(mass)
-MergeSort(mass, 0, n - 1)
-print(mass)
+        Merge(mass, p, q, r)      
